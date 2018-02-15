@@ -45,7 +45,7 @@ class PolygonalPrism extends Object3D {
                 //vec3.lerp(randColor, props.topColor, props.bottomColor, Math.random());
                 /* linear interpolation between two colors */
                 /* the next three floats are RGB */
-                if (s == 0)
+                if (s === 0)
                     colors.push(props.topColor[0], props.topColor[1], props.topColor[2]);
                 else
                     colors.push(props.bottomColor[0], props.bottomColor[1], props.bottomColor[2]);
@@ -64,7 +64,7 @@ class PolygonalPrism extends Object3D {
         gl.bindBuffer(gl.ARRAY_BUFFER, this.colorBuff);
         gl.bufferData(gl.ARRAY_BUFFER, Float32Array.from(colors), gl.STATIC_DRAW);
 
-        var index;
+        let index;
         for (let s = 0; s < verticalDiv; s++) {
             index = [];
             let start = s * props.numSides;
