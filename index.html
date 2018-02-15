@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D Objects</title>
+    <script src="webgl-utils.js"></script>
+    <script src="shader-utils.js"></script>
+    <script src="gl-matrix-min.js"></script>
+    <script src="geometry/Object3D.js"></script>
+    <script src="geometry/Cone.js"></script>
+    <script src="geometry/PolygonalPrism.js"></script>
+    <script src="render.js"></script>
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        #container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background: lavender;
+        }
+    </style>
+</head>
+<body onload="main()">
+<h2>Cityscape</h2>
+<div id="container">
+    <canvas id="my-canvas"></canvas>
+</div>
+<p>
+    <b>UP & DOWN ARROW:</b> move the plane forward or backward.<br>
+    <b>LEFT & RIGHT ARROW:</b> roll the plane left or right.<br>
+    <b>W & S KEY:</b> change the pitch of the plane forward or backward.<br>
+    <b>D & A KEY:</b> change the yaw of the plane right or left.
+</p>
+</body>
+</html>

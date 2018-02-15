@@ -63,7 +63,7 @@ class Cone extends Object3D {
         gl.bindBuffer(gl.ARRAY_BUFFER, this.colorBuff);
         gl.bufferData(gl.ARRAY_BUFFER, Float32Array.from(colors), gl.STATIC_DRAW);
 
-        var index;
+        let index;
         for (let s = 0; s < verticalDiv - 1; s++) {
             index = [];
             let start = s * props.radialDiv;

@@ -29,5 +29,9 @@ class Sphere extends Object3D {
         vec3.scale (seedD, seedD, RADIUS);
 
         /* TODO: complete the rest of the code here */
+        console.log(seedA[0]);
+        console.log(seedB[0]);
+        console.log(seedC[0]);
+        console.log(seedD[0]);
     }
 }
