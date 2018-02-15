@@ -52,7 +52,6 @@ fabric.properties
 
 # webgl
 elm-stuff
-index.html
 .DS_Store
 gh-pages
 release
