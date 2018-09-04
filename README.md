@@ -9,3 +9,5 @@ Random colorful polygonal prisms are generated on a plane. The camera/plane flys
 * Left + Right Arrows: roll the plane left or right.
 * W + S Keys: change the pitch of the plane forward or backward.
 * D + A Keys: change the yaw of the plane right or left.
+
+[Click here to see it in action.](http://www.cis.gvsu.edu/~stowellk/cityscape-flyover/)
